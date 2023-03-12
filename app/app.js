@@ -11,6 +11,7 @@ app.get("/", (req, res, next) =>{
 // router middleware
 app.use("/todos",todosRouter)
 app.use("/users", usersRouter)
+app.use("/posts", postsRouter)
 
 // add middleware to handle errors and bad url paths
 app.use((req, res, next) =>{
