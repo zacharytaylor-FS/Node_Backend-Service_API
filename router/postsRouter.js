@@ -29,3 +29,5 @@ postsRouter.get("/:id", (req, res, next) => {
       });
     });
 });
+
+module.exports = postsRouter

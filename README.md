@@ -23,7 +23,7 @@
 
 -   (Application Programmable Interface)
 
--   `NPM` used to init, install node package(s)
+-
 
 ---
 

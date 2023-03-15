@@ -1,4 +1,5 @@
 const express = require('express');
+const postsRouter = require('../router/postsRouter');
 const todosRouter = require('../router/todosRouter');
 const usersRouter = require('../router/usersRouter')
 const app = express();
@@ -10,8 +11,8 @@ app.get("/", (req, res, next) =>{
 
 // router middleware
 app.use("/todos",todosRouter)
-app.use("/users", usersRouter)
-app.use("/posts", postsRouter)
+app.use("/users",usersRouter)
+app.use("/posts",postsRouter)
 
 // add middleware to handle errors and bad url paths
 app.use((req, res, next) =>{
