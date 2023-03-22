@@ -2,7 +2,7 @@ const express = require('express');
 const todosRouter = express.Router();
 const { todoService, todoServiceById } = require('../services/todoService')
 
-todosRouter.get("/", (req, res, next) =>{
+todosRouter.post("/", (req, res, next) =>{
   todoService()
     .then(result => {
       res.status(200).json(result.data);
